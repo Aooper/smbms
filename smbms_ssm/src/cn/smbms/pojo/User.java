@@ -1,11 +1,16 @@
 package cn.smbms.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Component;
 @Component
-public class User {
+public class User implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Integer id; //id 
 	private String userCode; //用户编码
 	private String userName; //用户名称
@@ -128,5 +133,9 @@ public class User {
 				+ ", modifyBy=" + modifyBy + ", modifyDate=" + modifyDate + ", age=" + age + ", userRoleName="
 				+ userRoleName + "]";
 	}
+	public void setAge(Integer age) {
+		this.age = age;
+	}
+	
 	
 }
