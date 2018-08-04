@@ -1,7 +1,1 @@
-/applicationContext.xml
 /cn/
-/database.properties
-/dbconn.properties
-/log4j.properties
-/mybatis-config.xml
-/smbms_db.sql
